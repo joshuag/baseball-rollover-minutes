@@ -138,7 +138,7 @@ with open(season_data_file_path, 'r') as infile:
 				add_team_loss(new_wins_losses, home_team)
 			
 
-print("Under the old rules of baseball, these are the {season_to_get} W/L records")
+print(f"Under the old rules of baseball, these are the {season_to_get} W/L records")
 print("Rank\tTeam                     \tWins\tLosses\tPCT")
 print("---------------------------------------------------------------------------------------------------------")
 old_wins = sort_the_wins(old_wins_losses)
@@ -147,7 +147,7 @@ for team in old_wins:
 
 
 print("\n\n")
-print("Under the new t-mobile rules of baseball, these are the {season_to_get} W/L records")
+print(f"Under the new t-mobile rules of baseball, these are the {season_to_get} W/L records")
 print("Rank\tTeam                     \tWins\tLosses\tPCT\tPoints Left in the Bank")
 print("---------------------------------------------------------------------------------------------------------")
 new_wins = sort_the_wins(new_wins_losses)
